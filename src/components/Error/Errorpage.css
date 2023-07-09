@@ -1,0 +1,23 @@
+#error-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #000;
+    color: white;
+}
+.error-title{
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(30deg, #c850c0, #ffcc70);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.error-summary{
+    font-size: 1.5rem;
+}
+.actual-error{
+    font-size: 1.5rem;
+}

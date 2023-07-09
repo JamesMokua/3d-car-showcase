@@ -13,6 +13,9 @@
       "dom"
     ],
     "rootDir": "src",
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "node",
+    "outDir": "build",
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build/**/*"]
 }

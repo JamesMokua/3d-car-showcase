@@ -24,7 +24,7 @@ import {
     // Color, // Import THREE.js internals
     // Texture, // Import THREE.js internals
 } from "webgi";
-import "./styles.css";
+import "./App.css";
 
 async function setupViewer(){
 
@@ -37,7 +37,7 @@ async function setupViewer(){
     const manager = await viewer.addPlugin(AssetManagerPlugin)
 
     // Add a popup(in HTML) with download progress when any asset is downloading.
-    await viewer.addPlugin(AssetManagerBasicPopupPlugin)
+    // await viewer.addPlugin(AssetManagerBasicPopupPlugin)
 
     // Add plugins individually.
     // await viewer.addPlugin(GBufferPlugin)
@@ -65,15 +65,15 @@ async function setupViewer(){
     viewer.renderer.refreshPipeline()
 
     // Import and add a GLB file.
-    await viewer.load("./assets/classic-watch.glb")
+    await viewer.load("./assets/scene.glb")
 
     // Load an environment map if not set in the glb file
     // await viewer.setEnvironmentMap((await manager.importer!.importSinglePath<ITexture>("./assets/environment.hdr"))!);
 
     // Add some UI for tweak and testing.
-    const uiPlugin = await viewer.addPlugin(TweakpaneUiPlugin)
+    // const uiPlugin = await viewer.addPlugin(TweakpaneUiPlugin)
     // Add plugins to the UI to see their settings.
-    uiPlugin.setupPlugins<IViewerPlugin>(TonemapPlugin, CanvasSnipperPlugin)
+    // uiPlugin.setupPlugins<IViewerPlugin>(TonemapPlugin, CanvasSnipperPlugin)
 
 }
 
